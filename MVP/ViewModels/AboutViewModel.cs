@@ -36,6 +36,6 @@ namespace MVP.ViewModels
         }
 
         async Task OpenLicenses()
-            => await NavigationHelper.NavigateToAsync(nameof(LicensesPage)).ConfigureAwait(false);
+            => await NavigateAsync(nameof(LicensesPage)).ConfigureAwait(false);
     }
 }
